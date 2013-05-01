@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Connected monitors are - "
+xrandr --prop | awk '/\<connected\>/{print $1}'
+echo -n "Set primary monitor as: "
+read choice
+
+xrandr --output "$choice" --primary
