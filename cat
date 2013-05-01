@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Replace cat with pygemtize for syntax highlighting  
+# Requires script to be on $PATH before /bin/cat
+# Dependencies: python, pygments, pygemtize
+
+for var; do 
+    pygmentize "$var" 2> /dev/null
+    
+    if [ $? -ne 0 ]; then 
+        /bin/cat "$var"
+    fi
+done
