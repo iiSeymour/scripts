@@ -1,4 +1,4 @@
-<h2>A collection of scripts I use daily.</h2>
+<h2>A collection of random scripts.</h2>
 <ul>
 
 <li><strong>insta.sh</strong> - download a users instagrams photos to your disk. 
