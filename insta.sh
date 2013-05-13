@@ -1,4 +1,4 @@
-#!/bin/bash                                                                                                                                            
+#/bin/bash 
 
 # Stash a user instagram photos on your drive
 
@@ -23,4 +23,3 @@ grep -Po 'http:\\/\\/\K([[:alnum:]]+[.])+com\\/[[:alnum:]]+_7[.]jpg' "${dir}/${p
 tr -d '\\' |
 grep -v 'instagram' |
 xargs wget -P "$dir"
-
