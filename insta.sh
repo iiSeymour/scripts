@@ -1,4 +1,4 @@
-#/bin/bash 
+#!/usr/bin/env bash 
 
 # Stash a user instagram photos on your drive
 
